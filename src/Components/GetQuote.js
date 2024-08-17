@@ -44,7 +44,7 @@ class GetQuote extends React.Component {
   render() {
     const
       {
-        quote, author, url, tumblr, 
+        quote, author, url, tumblr,
       } = this.state;
     return (
       <div id="wrapper">
