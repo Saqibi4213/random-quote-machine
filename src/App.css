@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(39, 114, 92);
+}
+
+h2,
+a {
+  text-align: center;
+  font-family: sans-serif;
+  color: #fdfbfb;
+}
+
+#quote-box {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  color: rgb(236, 247, 243);
+  text-align: left;
+  background-color: #025a38;
+  border-radius: 50px 10px 50px 10px;
+  box-shadow: 8px 8px 30px rgb(157, 245, 197);
+}
+
+.quote-author {
+  width: 100%;
+  clear: both;
+  padding-top: 20px;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+#text {
+  text-align: left;
+  width: 100%;
+  font-size: 1.1em;
+}
+
+.buttons {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.button {
+  height: 38px;
+  border: none;
+  border-radius: 20px 2px 20px 2px;
+  background-color: rgb(39, 114, 92);
+  outline: none;
+  font-size: 0.85em;
+  font-weight: 700;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  color: #f5eeee;
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
+
+#tweet-quote,
+#tumblr-quote {
+  float: left;
+  padding: 0;
+  padding-top: 6px;
+  text-align: center;
+  font-size: 1.4em;
+  color: #f5eeee;
+  margin-right: 5px;
+  height: 35px;
+  width: 40px;
+  transition: 0.4s ease-in;
+}
+
+.button:hover,
+#tweet-quote:hover,
+#tumblr-quote:hover {
+  color: rgb(39, 114, 92);;
+  background-color: #e6e1e1;
+  box-shadow: 3px 3px 10px rgb(8, 197, 118);
+}
+
+#new-quote {
+  float: right;
+}
+
+@media (min-width: 700px) {
+  #quote-box {
+    width: 56vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  #quote-box {
+    width: 45vw;
+  }
+
+  .quote-text {
+    font-size: 1.5em;
+  }
+}
