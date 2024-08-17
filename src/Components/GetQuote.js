@@ -1,6 +1,7 @@
 import React from 'react';
+/* eslint-disable no-unused-vars */
 import { FaTwitter, FaQuoteLeft, FaTumblr } from 'react-icons/fa';
-
+/* eslint-enable no-unused-vars */
 class GetQuote extends React.Component {
   constructor(props) {
     super(props);
@@ -36,6 +37,7 @@ class GetQuote extends React.Component {
           });
         }
       })
+      // eslint-disable-next-line no-console
       .catch((error) => console.error(error));
   };
 
