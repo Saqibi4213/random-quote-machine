@@ -1,5 +1,5 @@
 import './App.css';
-import GetQuote from './Components/GetQuote';
+import GetQuote from './Components/GetQuote.js';
 
 function App() {
   return (
