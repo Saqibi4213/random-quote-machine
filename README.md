@@ -9,7 +9,7 @@ The Random Quote Machine is a web application built using React.js that generate
 ## Demo 📸
 
 
-![Demo](images./livedem.png)
+![Demo](./src/images/ran.png)
 <br>
  [Live-link]()
 
