@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  FaTwitter, FaQuoteLeft, FaTumblr,
-}
-  from 'react-icons/fa';
+import { FaTwitter, FaQuoteLeft, FaTumblr } from 'react-icons/fa';
 
 class GetQuote extends React.Component {
   constructor(props) {
@@ -18,37 +15,35 @@ class GetQuote extends React.Component {
 
   componentDidMount() {
     this.mounted = true;
-    if (this.mounted) {
-      this.quote();
-    }
+    this.quote();
   }
 
   componentWillUnmount() {
     this.mounted = false;
   }
 
-  quote() {
+  quote = () => {
     fetch('https://raw.githubusercontent.com/AtaGowani/daily-motivation/master/src/data/quotes.json')
       .then((response) => response.json())
       .then((data) => {
-        const item = data[Math.floor(Math.random() * data.length)];
-        this.setState({
-          quote: item.quote,
-          author: item.author,
-          url: `https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22I%20am%20not%20a%20product%20of%20my%20circumstances.%20I%20am%20a%20product%20of%20my%20decisions.%22%20Stephen%20Covey ${item.quote}  -  ${item.author}`,
-          tumblr: `https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=Stephen%20Covey&content=I%20am%20not%20a%20product%20of%20my%20circumstances.%20I%20am%20a%20product%20of%20my%20decisions.&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button ${item.quote}  -  ${item.author}`,
-        });
+        if (this.mounted) {
+          const item = data[Math.floor(Math.random() * data.length)];
+          this.setState({
+            quote: item.quote,
+            author: item.author,
+            url: `https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22${encodeURIComponent(item.quote)}%22%20-%20${encodeURIComponent(item.author)}`,
+            tumblr: `https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${encodeURIComponent(item.author)}&content=${encodeURIComponent(item.quote)}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`,
+          });
+        }
       })
-      .catch((error) => console.log(error));
-  }
+      .catch((error) => console.error(error));
+  };
 
   render() {
-    const {
-      quote, author, url, tumblr,
-    } = this.state;
+    const { quote, author, url, tumblr } = this.state;
     return (
       <div id="wrapper">
-        <h2>Randome Quote Machine</h2>
+        <h2>Random Quote Machine</h2>
         <br />
         <div id="quote-box">
           <div className="quote-text">
