@@ -10,8 +10,9 @@ The Random Quote Machine is a web application built using React.js that generate
 
 
 ![Demo](./src/images/ran.png)
+![FreeCodeCamp](./src/images/freecodecamp.png)
 <br>
- [Live-link]()
+ [Live-link](https://66c0c47db5731c8f34cdbfdf--lucent-fox-8ac766.netlify.app/)
 
 
 ## Technologies Used 🛠️
