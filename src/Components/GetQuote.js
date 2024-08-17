@@ -42,8 +42,10 @@ class GetQuote extends React.Component {
   };
 
   render() {
-    const 
-    { quote, author, url, tumblr } = this.state;
+    const
+      {
+        quote, author, url, tumblr 
+      } = this.state;
     return (
       <div id="wrapper">
         <h2>Random Quote Machine</h2>
