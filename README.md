@@ -12,7 +12,7 @@ The Random Quote Machine is a web application built using React.js that generate
 ![Demo](./src/images/ran.png)
 ![FreeCodeCamp](./src/images/freecodecamp.png)
 <br>
- [Live-link](https://66c0c47db5731c8f34cdbfdf--lucent-fox-8ac766.netlify.app/)
+ [Live-link](https://random-quote-section--graceful-druid-8b014e.netlify.app/)
 
 
 ## Technologies Used 🛠️
@@ -30,7 +30,7 @@ The Random Quote Machine is a web application built using React.js that generate
 - Responsive design that works well on both desktop and mobile devices
 
 ## Author 👩‍💻
-- Website: [website.com]( )
+- Website: [website.com](https://random-quote-section--graceful-druid-8b014e.netlify.app/)
 - LinkedIn: [Mehria saqibi](https://www.linkedin.com/in/mehria-saqibi-a386a41a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 - Email: [email](mosawermh@gmail.com)
 
